@@ -4,8 +4,12 @@ from test_framework import generic_test
 
 
 def has_two_sum(A: List[int], t: int) -> bool:
-    # TODO - you fill in here.
-    return True
+    num_dict = {}
+    for a in A:
+        num_dict[a] =1
+        if t-a in num_dict:
+            return True
+    return False
 
 
 if __name__ == '__main__':
